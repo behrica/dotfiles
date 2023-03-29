@@ -5,7 +5,9 @@
 - clean: ['~']
 
 - link:
-    ~/.clojure/deps.edn: clojure/deps.edn
+    ~/.clojure/deps.edn: 
+    create: true
+      path: clojure/deps.edn
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
