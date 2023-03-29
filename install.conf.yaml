@@ -6,8 +6,11 @@
 
 - link:
     ~/.clojure/deps.edn: 
-    create: true
-      path: clojure/deps.edn
+       create: true
+       path: clojure/deps.edn
+    ~/.config/git/config:
+       create: true
+       path: git/config     
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
