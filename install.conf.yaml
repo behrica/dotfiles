@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.clojure/deps.edn: clojure/deps.edn
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
