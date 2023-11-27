@@ -8,6 +8,7 @@
     ~/.clojure/deps.edn: 
        create: true
        path: clojure/deps.edn
+       force: true
     ~/.config/git/config:
        create: true
        path: git/config
