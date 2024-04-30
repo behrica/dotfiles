@@ -12,3 +12,7 @@
     ~/.config/git/config:
        create: true
        path: git/config
+    ~/.doom.d:
+       create: true     
+       path: doom  
+     
