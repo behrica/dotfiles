@@ -14,5 +14,8 @@
        path: git/config
     ~/.doom.d:
        create: true     
-       path: doom  
+       path: doom
+    ~/.setup-ide:
+       create: true
+       path: setup-ide     
      
