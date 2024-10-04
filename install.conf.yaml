@@ -12,9 +12,9 @@
     ~/.config/git/config:
        create: true
        path: git/config
-    ~/.config/calva:
+    ~/.config/calva/config.edn:
        create: true
-       path: calva/config      
+       path: calva/config.edn      
     ~/.doom.d:
        create: true     
        path: doom
