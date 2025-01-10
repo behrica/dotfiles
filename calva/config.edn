@@ -1,9 +1,21 @@
 {:customREPLCommandSnippets
+ 
  [{:name "Add Libs (Sync w/aliases)"
    :key "a"
    :snippet (tap>
              ((requiring-resolve 'clojure.repl.deps/sync-deps)
               :aliases (read-string (str "[" (read-line) "]"))))}
+  
+  {
+   :name "Require snitch"
+   :key "s"    
+   :snippet (do
+              ((requiring-resolve 'clojure.repl.deps/add-lib)
+               'org.clojars.abhinav/snitch {:mvn/version "0.1.15"})
+              (require '[snitch.core :refer [defn* defmethod* *fn *let]]))
+
+  }
+
   {:name "Run Current Test"
    :key "c"
    :snippet (binding [clojure.test/*test-out* *out*]
